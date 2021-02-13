@@ -16,6 +16,7 @@ namespace RGBNamer
             int G = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Please define B values between 0-255;  ");
             int B = Int32.Parse(Console.ReadLine());
+            
             //Boolean variables used to provide text output
             bool White = (R + G + B == 765);
             bool Black = (R + G + B == 0);
@@ -25,7 +26,7 @@ namespace RGBNamer
             bool Redish = (R >= (G + B));
             bool Bluish = (B >= (G + R));
             bool Greenish = (G >= (R + B));
-            string err = "You're not very good at listening, are you?";
+            string err = "Please ensure all values are between 0-255";
            
             //first three statements are if a user defies instructions.
             if (R >= 256)
